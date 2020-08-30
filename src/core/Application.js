@@ -77,7 +77,6 @@ export default class GameApplication extends Application {
      */
   onResize(width = this.config.view.width, height = this.config.view.height) {
     center(this.background, { width, height });
-    this.game.onResize(width, height);
 
     if (this.config.view.centerOnResize) {
       this.viewport.x = width / 2;
